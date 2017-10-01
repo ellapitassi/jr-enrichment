@@ -53,3 +53,7 @@ router.post('/', function (req,res,next){
     .then(teacher => res.json(teacher).status(201).end())
 })
 ///if we send a teacher without a subject...
+
+//findOne - have to define a where {where: {id: id}}
+//findByID - takes id
+//findAll has where if youre looking for specific attribute if not leave empty

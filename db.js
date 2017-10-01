@@ -95,5 +95,9 @@ const Teacher = db.define('teacher', {
 //FROM WIKISTACK -- FOR setting ASSOCIATIONS
 //Page.belongsTo(User, {as: 'author'});
 
+// - a teacherID for their corresponding teacher. 
 Student.belongsTo(Teacher)//sets it as teacherID
 module.exports = {db, Student, Teacher}
+
+
+//cant deal with associations inside virtual columns, whereas things on the prototype (grade) does
